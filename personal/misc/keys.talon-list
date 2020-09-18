@@ -1,0 +1,8 @@
+list: user.special_key
+-
+
+page: pagedown
+tabby: tab
+scape: escape
+shock: return
+semi: ;
