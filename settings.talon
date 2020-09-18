@@ -26,6 +26,8 @@ settings():
     # the number of lines of command history to keep in total;
     # "command history more" to display all of them, "command history less" to restore
     user.command_history_size = 50
+    # record commands into .talon/recordings
+    speech.record_all=1
 	
 # uncomment tag to enable mouse grid
-# tag(): user.mouse_grid_enabled
+tag(): user.mouse_grid_enabled

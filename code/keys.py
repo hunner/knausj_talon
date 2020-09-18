@@ -3,7 +3,7 @@ from typing import Set
 from talon import Module, Context, actions, app
 import sys
 
-default_alphabet = "air bat cap drum each fine gust harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
+default_alphabet = "air bat cap drum each fine gone harp sit jury crunch look made near odd pit quench red sun trap urge vest whale plex yank zip".split(
     " "
 )
 letters_string = "abcdefghijklmnopqrstuvwxyz"
@@ -144,7 +144,7 @@ punctuation_words = {
 }
 symbol_key_words = {
     "dot": ".",
-    "quote": "'",
+    #"quote": "'",
     "L square": "[",
     "left square": "[",
     "square": "[",
@@ -186,6 +186,11 @@ symbol_key_words = {
     "pipe": "|",
     "dubquote": '"',
     "double quote": '"',
+
+
+    'grave': '`',
+    "tick": "'",
+    'quote': '"',
 }
 
 # make punctuation words also included in {user.symbol_keys}
@@ -201,7 +206,7 @@ ctx.lists["self.arrow_key"] = {
 }
 
 simple_keys = [
-    "end",
+    # "end",
     "enter",
     "escape",
     "home",
@@ -216,6 +221,18 @@ alternate_keys = {
     "delete": "backspace",
     "forward delete": "delete",
     #'junk': 'backspace',
+    'page': 'pagedown',
+    'wipe': 'backspace',
+    'forward delete': 'delete',
+    'gone': 'g',
+    'kiss': 'k',
+    'zed': 'z',
+    'yes': 'y',
+    'endo': 'end',
+    #'pa': 'space',
+    'cape': 'escape',
+    'shock': 'enter',
+    'grave': '`',
 }
 # mac apparently doesn't have the menu key.
 if app.platform in ("windows", "linux"):

@@ -19,3 +19,8 @@ format copy <number>:
 ^nope that was <user.formatters>$:
   user.formatters_clear_last()
   insert(user.formatters_reformat_last(user.formatters))
+
+
+more <phrase>$:
+  insert(' ')
+  dictate.natural(phrase)
