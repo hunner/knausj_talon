@@ -78,6 +78,12 @@ right drag | righty drag:
     # close the mouse grid
     user.grid_close()
 end drag | drag end: user.mouse_drag_end()
+<user.modifiers> drag:
+    key("{modifiers}:down")
+    user.mouse_drag(0)
+    key("{modifiers}:up")
+    # close the mouse grid
+    user.grid_close()
 wheel down: user.mouse_scroll_down()
 wheel down here:
     user.mouse_move_center_active_window()

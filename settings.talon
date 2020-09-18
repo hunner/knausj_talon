@@ -5,6 +5,7 @@ settings():
     # Uncomment to set the speech timeout. This is the amount of time after you stop
     # speaking until Talon starts processing the spoken audio. Default is 0.3s.
     # speech.timeout = 0.3
+    speech.timeout = 0.2
 
     # Uncomment to enable dark mode for talon help menus
     # imgui.dark_mode = true
@@ -62,10 +63,10 @@ settings():
     user.mouse_wheel_horizontal_amount = 40
 
     # If `true`, start mouse grid numbering on the bottom left (vs. top left)
-    user.grids_put_one_bottom_left = true
+    user.grids_put_one_bottom_left = false
 
     # Set the default number of command history lines to display
-    user.command_history_display = 10
+    user.command_history_display = 5
 
     # Set the total number of command history lines to display
     user.command_history_size = 50
@@ -126,3 +127,7 @@ settings():
 # Uncomment the below to enable the experimental window layout commands
 # defined in window_layout.talon
 # tag(): user.experimental_window_layout
+
+# record commands into .talon/recordings
+speech.record_all=1
+

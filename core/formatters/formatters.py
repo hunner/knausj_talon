@@ -243,6 +243,11 @@ formatter_list = [
     CodeFormatter("ALL_SLASHES", "/", lambda text: f"/{text.lower()}", lower),
     CodeFormatter("DOUBLE_UNDERSCORE", "__", lower, lower),
     CodeFormatter("DOUBLE_COLON_SEPARATED", "::", lower, lower),
+    CodeFormatter("FIRST_THREE", "", lambda i, word, _: word[0:3]),
+    CodeFormatter("FIRST_FOUR", "", lambda i, word, _: word[0:4]),
+    CodeFormatter("FIRST_FIVE", "", lambda i, word, _: word[0:5]),
+    # Prefix with " --" then separated with single dashes, like --this-example-here
+    CodeFormatter("TERMINAL_DASH_SEPARATED", "-", lambda text: f" --{text.lower()}", lower),
 ]
 
 formatters_dict = {f.id: f for f in formatter_list}

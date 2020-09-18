@@ -17,3 +17,6 @@ smash: NO_SPACES
 snake: SNAKE_CASE
 string: SINGLE_QUOTED_STRING
 constant: ALL_CAPS,SNAKE_CASE
+tree: FIRST_THREE
+quad: FIRST_FOUR
+fiver: FIRST_FIVE

@@ -30,3 +30,8 @@ nope that was <user.formatters>: user.formatters_reformat_last(formatters)
 (abbreviate | abreviate | brief) {user.abbreviation}: "{abbreviation}"
 <user.formatters> (abbreviate | abreviate | brief) {user.abbreviation}:
     user.insert_formatted(abbreviation, formatters)
+
+
+more <phrase>$:
+  insert(' ')
+  dictate.natural(phrase)

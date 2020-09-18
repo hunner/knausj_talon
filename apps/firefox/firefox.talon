@@ -1,4 +1,6 @@
 app: firefox
+app: firefox-developer-edition
+app: firefoxdeveloperedition
 -
 tag(): browser
 tag(): user.tabs

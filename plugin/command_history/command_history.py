@@ -30,8 +30,8 @@ def on_phrase(j):
 @imgui.open(y=0)
 def gui(gui: imgui.GUI):
     global history
-    gui.text("Command History")
-    gui.line()
+    #gui.text("Command History")
+    #gui.line()
     text = (
         history[:]
         if hist_more
